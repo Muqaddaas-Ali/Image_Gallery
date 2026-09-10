@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vista Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Vista Gallery home">VISTA<span>.</span></a>
+      <a class="nav-link" href="#gallery">Explore collection <span aria-hidden="true">↘</span></a>
+    </nav>
+    <div class="hero-copy container" id="home">
+      <p class="eyebrow">Curated visual stories</p>
+      <h1>See the world<br /><em>differently.</em></h1>
+      <p class="intro">A collection of quiet moments, dramatic places, and beautiful details from around the globe.</p>
+    </div>
+  </header>
+
+  <main id="gallery" class="container gallery-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">The collection</p>
+        <h2>Featured frames</h2>
+      </div>
+      <p class="photo-count"><span id="visibleCount">12</span> photographs</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter gallery">
+      <button class="filter active" data-filter="all">All work</button>
+      <button class="filter" data-filter="nature">Nature</button>
+      <button class="filter" data-filter="urban">Urban</button>
+      <button class="filter" data-filter="people">People</button>
+      <button class="filter" data-filter="abstract">Abstract</button>
+    </div>
+
+    <section class="gallery-grid" aria-label="Photo gallery">
+      <article class="gallery-card wide" data-category="nature" data-title="Misty ridgelines" data-location="Swiss Alps">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85" alt="Misty mountain peaks" />
+        <button class="view-button" aria-label="View Misty ridgelines">View image <span>↗</span></button>
+        <div class="card-caption"><h3>Misty ridgelines</h3><p>Swiss Alps</p></div>
+      </article>
+      <article class="gallery-card tall" data-category="people" data-title="Sunday ritual" data-location="Marrakech, Morocco">
+        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=800&q=85" alt="Woman in a colorful market" />
+        <button class="view-button" aria-label="View Sunday ritual">View image <span>↗</span></button>
+        <div class="card-caption"><h3>Sunday ritual</h3><p>Marrakech, Morocco</p></div>
+      </article>
+      <article class="gallery-card" data-category="urban" data-title="After the rain" data-location="Tokyo, Japan">
+        <img src="https://unsplash.com/photos/new-york-city-skyline-at-night-t8XP7MBLxsw" alt="City lights at night" />
+        <button class="view-button" aria-label="View After the rain">View image <span>↗</span></button>
+        <div class="card-caption"><h3>After the rain</h3><p>Tokyo, Japan</p></div>
+      </article>
+      <article class="gallery-card" data-category="abstract" data-title="Blue hour" data-location="Studio series">
+        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=800&q=85" alt="Abstract blue architectural shapes" />
+        <button class="view-button" aria-label="View Blue hour">View image <span>↗</span></button>
+        <div class="card-caption"><h3>Blue hour</h3><p>Studio series</p></div>
+      </article>
+      <article class="gallery-card" data-category="nature" data-title="Desert silence" data-location="Namib Desert, Namibia">
+        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=85" alt="Sand dunes in the desert" />
+        <button class="view-button" aria-label="View Desert silence">View image <span>↗</span></button>
+        <div class="card-caption"><h3>Desert silence</h3><p>Namib Desert, Namibia</p></div>
+      </article>
+      <article class="gallery-card wide" data-category="urban" data-title="Geometry of light" data-location="Copenhagen, Denmark">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=85" alt="Modern concrete building" />
+        <button class="view-button" aria-label="View Geometry of light">View image <span>↗</span></button>
+        <div class="card-caption"><h3>Geometry of light</h3><p>Copenhagen, Denmark</p></div>
+      </article>
+      <article class="gallery-card" data-category="people" data-title="Golden laughter" data-location="Lisbon, Portugal">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85" alt="Portrait of a smiling woman" />
+        <button class="view-button" aria-label="View Golden laughter">View image <span>↗</span></button>
+        <div class="card-caption"><h3>Golden laughter</h3><p>Lisbon, Portugal</p></div>
+      </article>
+      <article class="gallery-card" data-category="abstract" data-title="Soft form" data-location="Material studies">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=800&q=85" alt="Purple and pink abstract gradient" />
+        <button class="view-button" aria-label="View Soft form">View image <span>↗</span></button>
+        <div class="card-caption"><h3>Soft form</h3><p>Material studies</p></div>
+      </article>
+      <article class="gallery-card" data-category="nature" data-title="Tidal pools" data-location="Big Sur, California">
+        <img src="https://images.unsplash.com/photo-1439405326854-014607f694d7?auto=format&fit=crop&w=800&q=85" alt="Ocean waves on a rocky shore" />
+        <button class="view-button" aria-label="View Tidal pools">View image <span>↗</span></button>
+        <div class="card-caption"><h3>Tidal pools</h3><p>Big Sur, California</p></div>
+      </article>
+      <article class="gallery-card wide" data-category="urban" data-title="The long way home" data-location="New York, USA">
+        <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1200&q=85" alt="New York city street viewed from above" />
+        <button class="view-button" aria-label="View The long way home">View image <span>↗</span></button>
+        <div class="card-caption"><h3>The long way home</h3><p>New York, USA</p></div>
+      </article>
+      <article class="gallery-card" data-category="people" data-title="A small pause" data-location="Kyoto, Japan">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=85" alt="Portrait of a thoughtful man" />
+        <button class="view-button" aria-label="View A small pause">View image <span>↗</span></button>
+        <div class="card-caption"><h3>A small pause</h3><p>Kyoto, Japan</p></div>
+      </article>
+      <article class="gallery-card" data-category="abstract" data-title="In bloom" data-location="Botanical study">
+        <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=85" alt="Lush green leaves" />
+        <button class="view-button" aria-label="View In bloom">View image <span>↗</span></button>
+        <div class="card-caption"><h3>In bloom</h3><p>Botanical study</p></div>
+      </article>
+    </section>
+  </main>
+
+  <footer><p>© 2026 VISTA — Made for the curious.</p></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button class="close-lightbox" aria-label="Close image viewer">×</button>
+    <button class="lightbox-nav previous" aria-label="Previous image">←</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="" />
+      <figcaption><span id="lightboxTitle"></span><small id="lightboxLocation"></small></figcaption>
+    </figure>
+    <button class="lightbox-nav next" aria-label="Next image">→</button>
+    <p class="lightbox-counter" id="lightboxCounter"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
